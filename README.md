@@ -1,7 +1,19 @@
 # SSL-Sync
 This is a tool designed for syncing SSL certs from on machine to another. 
 
+## Install
+- ```pip install requirements.txt```
+- ```python3 main.py``` or ```python main.py```
 
+
+## Requirement
+- Python 3.xx or Python 2.xx
+- wget~=3.2
+- schedule~=1.1.0
+- setuptools~=60.2.0
+
+
+```bash
 
 usage: main.py [-h] [-s] [-v] [--ignore-existing] [--sync-time SYNC_TIME] [--source-ip SOURCE_IP] [--source-cert-name SOURCE_CERT_NAME] [--output-dir OUTPUT_DIR] [--output-cert-name OUTPUT_CERT_NAME]
 
@@ -20,3 +32,4 @@ optional arguments:
                         Destination location For SSL Certs (default: None)
   --output-cert-name OUTPUT_CERT_NAME
                         Name For The SSL Certs (default: None)
+```												
